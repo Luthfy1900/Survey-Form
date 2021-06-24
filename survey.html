@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="survey.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <title>Survey form</title>
+  </head>
+  <main>
+    <header>
+      <div class="fullscreen-image-wrap">
+        <img src="work.jpg" type="image" />
+      </div>
+      <div class="image-overlay"></div>
+    </header>
+    <body>
+      <h1 id="title" style="text-align: center">Marketing Survey Form</h1>
+      <p id="description" style="text-align: center">
+        <i
+          >Please fill out the form below to help improve our marketing. Thank
+          you!</i
+        >
+      </p>
+      <div id="class">
+        <form id="survey-form">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+            required
+          /><br />
+          <label for="email" id="email-label">Email:</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            required
+          /><br />
+          <label for="number" id="number-label">Age (optional):</label>
+          <input
+            id="number"
+            type="number"
+            placeholder="Enter your age"
+            name="number"
+            min="18"
+            max="100"
+          /><br />
+          <label for="dropdown">What is your current role?</label>
+          <select name="position" id="dropdown">
+            <option value="" disabled selected>Select a role</option>
+            <option value="full-time">Full-time</option>
+            <option value="part-time">Part-time</option>
+            <option value="student">Student</option>
+            <option value="prefer not to say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          <div id="me">
+            <p class="p">Would you recommend our services to a friend?</p>
+            <label for="definitely"
+              ><input
+                type="radio"
+                id="definitely"
+                name="recommend"
+                value="Definitely"
+              />Definitely</label
+            >
+             
+            <label for="maybe"
+              ><input
+                type="radio"
+                id="maybe"
+                name="recommend"
+                value="Maybe"
+              />Maybe</label
+            >
+             
+            <label for="not sure"
+              ><input
+                type="radio"
+                id="not-sure"
+                name="recommend"
+                value="Not sure"
+              />Not sure</label
+            >
+          </div>
+          <div id="me1">
+            <p class="p">What can we improve? (Check all that apply)</p>
+            <label for="backend"
+              ><input
+                type="checkbox"
+                id="backend"
+                name="improve"
+                value="Backend"
+              />Backend</label
+            >
+             
+            <label for="frontend"
+              ><input
+                type="checkbox"
+                id="frontend"
+                name="improve"
+                value="Frontend"
+              />Frontend</label
+            >
+             
+            <label for="challenges"
+              ><input
+                type="checkbox"
+                id="challenges"
+                name="improve"
+                value="Challenges"
+              />Challenges</label
+            >
+          </div>
+          <p>Any Comments or Suggestions?</p>
+          <textarea placeholder="Enter information here....."></textarea>
+          <button type="sbmit" id="submit">Submit</button>
+        </form>
+      </div>
+    </body>
+  </main>
 </html>

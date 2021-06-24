@@ -1,3 +1,113 @@
 * {
-    
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin-top: 100px;
+  margin-bottom: 0 auto;
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+}
+.fullscreen-image-wrap {
+  position: fixed;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.fullscreen-image-wrap image {
+  min-width: 1000%;
+  min-height: 1000%;
+}
+
+.image-overlay {
+  height: 120vw;
+  width: 120vw;
+  background-color: #225470;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.65;
+}
+
+#class {
+  position: relative;
+  background: rgba(41, 69, 152, 0.5);
+  border-radius: 20px;
+  border-style: transparent;
+  width: 30em;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  padding-right: 30px;
+  padding-left: 5px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  line-height: 0 auto;
+}
+
+#survey-form {
+  padding-left: 2rem;
+  line-height: 3rem;
+}
+
+label {
+  display: block;
+}
+
+#name,
+#email,
+#number {
+  border-style: none;
+  border-radius: 4px;
+  width: 600px;
+  height: 25px;
+}
+
+select {
+  border-radius: 4px;
+  width: 600px;
+  height: 24px;
+}
+
+#me,
+#me1 {
+  text-align: left;
+  line-height: 2rem;
+}
+
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  width: 650px;
+  height: 200px;
+}
+
+button {
+  font-size: 1rem;
+  width: 650px;
+  background-color: orange;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body::-webkit-scrollbar {
+  background-color: #225470;
+  overflow-y: overlay;
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 20px;
 }
